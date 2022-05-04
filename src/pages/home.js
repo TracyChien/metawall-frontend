@@ -2,16 +2,20 @@ import bgSvg from "../assets/images/bg.svg";
 const Home = () => {
   return (
     <div>
-      <header className="px-60 flex justify-between border-b-2 border-solid border-black">
-        <div className=" text-2xl font-bold py-3">MetaWall</div>
+      <header className="border-b-2 border-solid border-black">
+        <div className="container mx-auto  flex justify-between">
+          <div className=" text-2xl font-bold py-3">MetaWall</div>
+        </div>
       </header>
       <div
         style={{ backgroundImage: `url(${bgSvg})` }}
-        className="container mx-auto h-screen"
+        className=" bg-repeat bg-contain h-screen"
       >
-        <h1 className="text-3xl font-bold underline text-blue-500">
-          Hello world!
-        </h1>
+        <div className="container mx-auto">
+          <h1 className="text-3xl font-bold underline text-blue-500">
+            Hello world!
+          </h1>
+        </div>
       </div>
     </div>
   );
