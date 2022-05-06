@@ -14,6 +14,19 @@ module.exports = {
       backgroundImage: {
         normal: "url('../assets/images/bg.svg')",
       },
+      colors: {
+        "light-brown": "#EFECE7",
+        "light-blue": "#E2EDFA",
+        "dark-blue": "#03438D",
+        "dark-yellow": "#EEC32A",
+        "light-yellow": "#FAA722",
+        "danger-red": "#DE4B63",
+        "light-green": "#83C51D",
+      },
+      dropShadow: {
+        left: "-2px 2px 0px #000400",
+        bottom: "0px 3px 0px #000400",
+      },
     },
   },
   plugins: [],
