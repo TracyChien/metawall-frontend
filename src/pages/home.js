@@ -126,7 +126,7 @@ const Home = () => {
     <div>
       <Header />
       <div className="container mx-auto py-4 md:py-12">
-        <div className="flex justify-between items-center gap-0 flex-col md:flex-row md:gap-7 md:items-start">
+        <div className="relative flex justify-between gap-0 flex-col md:flex-row md:gap-7 md:items-start">
           {/* left side */}
           <div className="basis-4/6 ">
             <div className="flex justify-between flex-col md:flex-row md:gap-3">

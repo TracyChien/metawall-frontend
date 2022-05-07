@@ -50,7 +50,7 @@ const NewPost = () => {
     <div>
       <Header />
       <div className="container mx-auto  py-4 md:py-12">
-        <div className="flex justify-between items-center gap-0 flex-col md:flex-row md:gap-7 md:items-start">
+        <div className="relative flex justify-between gap-0 flex-col md:flex-row md:gap-7 md:items-start">
           {/* left side */}
           <div className="basis-4/6 ">
             {/* title */}
@@ -110,7 +110,7 @@ const NewPost = () => {
                 <div className="w-full">
                   <button
                     type="submit"
-                    className=" block border-2 border-solid border-black bg-[#A8B0B9] text-black py-4 px-32 rounded mx-auto font-semibold hover:bg-dark-yellow hover:drop-shadow-left"
+                    className=" w-full block border-2 border-solid border-black bg-[#A8B0B9] text-center text-black py-4 rounded mx-auto font-semibold hover:bg-dark-yellow hover:drop-shadow-left"
                   >
                     送出貼文
                   </button>
