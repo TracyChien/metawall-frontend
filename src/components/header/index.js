@@ -1,7 +1,7 @@
 import userImg from "../../assets/images/user.png";
 const Header = () => {
   return (
-    <header className="border-b-2 border-solid border-black">
+    <header className="border-b-2 border-solid border-black bg-white">
       <div className="container mx-auto  flex justify-between items-center">
         <h1 className=" text-2xl font-bold py-3">MetaWall</h1>
         <div className="flex items-center">

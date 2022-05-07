@@ -22,6 +22,7 @@ module.exports = {
         "light-yellow": "#FAA722",
         "danger-red": "#DE4B63",
         "light-green": "#83C51D",
+        "light-red": "#F57375",
       },
       dropShadow: {
         left: "-2px 2px 0px #000400",
