@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/metawall-frontend/static/css/main.20d05ea2.css",
-    "main.js": "/metawall-frontend/static/js/main.60fa6efa.js",
+    "main.js": "/metawall-frontend/static/js/main.6d95fcd4.js",
     "static/js/787.ff6fec04.chunk.js": "/metawall-frontend/static/js/787.ff6fec04.chunk.js",
     "static/media/user@2x.png": "/metawall-frontend/static/media/user@2x.789eb6c560c19719d938.png",
     "static/media/bg.svg": "/metawall-frontend/static/media/bg.76739f2ab01c130c4ff5f5ff247ce38e.svg",
     "index.html": "/metawall-frontend/index.html",
     "static/media/arrow-down.svg": "/metawall-frontend/static/media/arrow-down.6c59c4cd02f87283484aa1bb10042a39.svg",
     "main.20d05ea2.css.map": "/metawall-frontend/static/css/main.20d05ea2.css.map",
-    "main.60fa6efa.js.map": "/metawall-frontend/static/js/main.60fa6efa.js.map",
+    "main.6d95fcd4.js.map": "/metawall-frontend/static/js/main.6d95fcd4.js.map",
     "787.ff6fec04.chunk.js.map": "/metawall-frontend/static/js/787.ff6fec04.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.20d05ea2.css",
-    "static/js/main.60fa6efa.js"
+    "static/js/main.6d95fcd4.js"
   ]
 }
