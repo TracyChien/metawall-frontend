@@ -5,8 +5,9 @@ import { useNavigate } from "react-router-dom";
 import Header from "../components/header";
 import Nav from "../components/nav";
 // import Nodata from "../components/noData";
-// // api
+// api
 import apiCaller from "../utils/apiCaller";
+import config from "../utils/config";
 
 // import ArrowDownSvg from "../assets/images/arrow-down.svg";
 const initContent = {
@@ -41,7 +42,7 @@ const NewPost = () => {
       image: post.image,
     };
     apiCaller
-      .post(`http://localhost:3000/posts`, apiBody)
+      .post(config.post_url, apiBody)
       .then((res) => navigate("/"))
       .catch((err) => console.log(err));
   };

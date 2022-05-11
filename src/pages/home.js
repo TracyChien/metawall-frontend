@@ -6,6 +6,7 @@ import Nav from "../components/nav";
 import Nodata from "../components/noData";
 // api
 import apiCaller from "../utils/apiCaller";
+import config from "../utils/config";
 
 import ArrowDownSvg from "../assets/images/arrow-down.svg";
 
@@ -112,7 +113,7 @@ const Home = () => {
         : searchParams.get("timeSort");
     const query = searchParams.get("q") === null ? "" : searchParams.get("q");
     apiCaller
-      .get(`http://localhost:3000/posts?timeSort=${timeSort}&q=${query}`)
+      .get(`${config.post_url}?timeSort=${timeSort}&q=${query}`)
       .then((res) => setPostList(res.data))
       .catch((err) => console.log(err));
   }, [searchParams]);
