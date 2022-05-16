@@ -27,6 +27,7 @@ module.exports = {
       dropShadow: {
         left: "-2px 2px 0px #000400",
         bottom: "0px 3px 0px #000400",
+        "left-o": "-8px 8px 0px #00040029",
       },
     },
   },

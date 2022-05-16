@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import userBigImg from "../../assets/images/user@2x.png";
 import HomeIcon from "../../assets/icon/HomeIcon";
@@ -5,7 +6,17 @@ import BellIcon from "../../assets/icon/BellIcon";
 import ThumbIcon from "../../assets/icon/ThumbIcon";
 import PlusIcon from "../../assets/icon/PlusIcon";
 
+import apiCaller from "../../utils/apiCaller";
+import config from "../../utils/config";
+
 const Nav = () => {
+  const [userInfo, setUserInfo] = useState({});
+
+  useEffect(() => {
+    apiCaller.get(true, config.get_profile_url, {}).then((res) => {
+      setUserInfo(res.user);
+    });
+  }, []);
   return (
     <div className=" fixed inset-x-0 bottom-4 md:relative bg-light-brown md:bg-white border-2 border-solid border-black px-11 py-[6px] md:px-6 md:py-8 rounded-full md:rounded-none">
       <Link
@@ -17,9 +28,13 @@ const Nav = () => {
       <ul className="flex flex-row md:flex-col justify-between md:mt-6 md:px-2">
         <li className=" hidden md:block">
           <a href="/#" className="flex items-center group">
-            <img alt="user" src={userBigImg} className="w-[50px]" />
+            <img
+              alt="user"
+              src={userInfo?.photo || userBigImg}
+              className="w-[50px]"
+            />
             <p className="ml-4 font-bold group-hover:text-dark-blue">
-              邊緣小杰
+              {userInfo?.name}
             </p>
           </a>
         </li>

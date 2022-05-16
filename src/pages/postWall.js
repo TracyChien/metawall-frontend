@@ -4,13 +4,14 @@ import { useSearchParams } from "react-router-dom";
 import Header from "../components/header";
 import Nav from "../components/nav";
 import Nodata from "../components/noData";
+import userBigImg from "../assets/images/user@2x.png";
 // api
 import apiCaller from "../utils/apiCaller";
 import config from "../utils/config";
 
 import ArrowDownSvg from "../assets/images/arrow-down.svg";
 
-const Home = () => {
+const PostWall = () => {
   const [searchParams, setSearchParams] = useSearchParams({
     timeSort: "desc",
     q: "",
@@ -79,7 +80,7 @@ const Home = () => {
         <div className="flex items-center ">
           <img
             alt="user"
-            src={post?.user?.photo}
+            src={post?.user?.photo || userBigImg}
             className="border-2 border-solid border-black rounded-full w-[45px] h-[45px] object-cover object-center"
           />
           <div className="flex flex-col ml-4">
@@ -113,7 +114,7 @@ const Home = () => {
         : searchParams.get("timeSort");
     const query = searchParams.get("q") === null ? "" : searchParams.get("q");
     apiCaller
-      .get(`${config.post_url}?timeSort=${timeSort}&q=${query}`)
+      .get(true, `${config.post_url}?timeSort=${timeSort}&q=${query}`)
       .then((res) => setPostList(res.data))
       .catch((err) => console.log(err));
   }, [searchParams]);
@@ -175,4 +176,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default PostWall;

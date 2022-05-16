@@ -42,8 +42,8 @@ const NewPost = () => {
       image: post.image,
     };
     apiCaller
-      .post(config.post_url, apiBody)
-      .then((res) => navigate("/"))
+      .post(true, config.post_url, apiBody)
+      .then((res) => navigate("/post"))
       .catch((err) => console.log(err));
   };
 
